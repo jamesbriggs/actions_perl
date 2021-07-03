@@ -1,2 +1,2 @@
-# actions_perl
-Github action test for Perl
+# gh-actions-demo
+Github Actions demo for several programming languages
