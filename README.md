@@ -6,4 +6,4 @@ Github Actions demo for several simultaneous programming languages in one repo:
 1. Perl
 1. Ruby
 
-See `.github/workflow/` for build scripts.
+See `.github/workflows/` for build scripts.
