@@ -19,4 +19,4 @@ jobs:
 #     - run: cpanm --installdeps .
       - run: perl -V
       - run: prove -lv t
-      - run: find . -name '*.pl' -exec perl -c {} \;      
+      - run: find . -name '*.pl' -o -name '*.pm' -exec perl -c {} \;      
