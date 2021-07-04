@@ -19,4 +19,5 @@ jobs:
 #     - run: cpanm --installdeps .
       - run: perl -V
       - run: prove -lv t
-      - run: find . -name '*.pl' -o -name '*.pm' -exec perl -c {} \;      
+      - run echo "GITHUB_WORKSPACE=${GITHUB_WORKSPACE}"
+      - run: find ${GITHUB_WORKSPACE} -name '*.pl' -o -name '*.pm' -exec perl -c {} \;      
