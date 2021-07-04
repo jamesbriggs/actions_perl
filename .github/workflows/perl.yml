@@ -21,4 +21,5 @@ jobs:
       - run: prove -lv t
       - run: echo "GITHUB_WORKSPACE=${GITHUB_WORKSPACE}"
       - run: find ${GITHUB_WORKSPACE} -name '*.pl' -o -name '*.pm'
-      - run: find ${GITHUB_WORKSPACE} -name '*.pl' -o -name '*.pm' -exec perl -c {} \;
+      - run: find . -name '*.pl' -o -name '*.pm'
+      - run: find ${GITHUB_WORKSPACE} -name '*.pl' -o -name '*.pm' -print -exec perl -c {} \;
