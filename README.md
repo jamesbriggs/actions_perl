@@ -1,4 +1,7 @@
 # gh-actions-demo
+
+## Introduction
+
 Github Actions PoC demo repo for several programming languages and associated linters in one repo simultaneously:
 
 1. Bash (Shellcheck)
@@ -8,12 +11,17 @@ Github Actions PoC demo repo for several programming languages and associated li
 
 See `.github/workflows/` for the build scripts.
 
-Github Actions works by starting Docker containers for each OS or programming language version (aka "matrix-build") you specify. If you're using Github anyway for source control, and
-your automation is amenable to Github Actions, then it's a very useful option compared to Jenkins, etc., and reduces administration.
+## How Github Actions Works
+
+Github Actions works by starting Docker containers for each OS or programming language version (aka "matrix-build") you specify. If you're using Github anyway for source control, and your automation is amenable to Github Actions, then it's a very useful option compared to Jenkins, etc., and reduces administration.
 
 When there's multiple workflow scripts, all are executed in parallel. The workflow script has to decide by directory or file extension what the run actions are. After three build errors, execution automatically stops to conserve resources.
 
+## Workflow Security
+
 Only push events (not pull) are specified in this repo to avoid reported security problems with cloned repos used in unauthorized bitcoin mining via pull requests.
+
+## Limitations
 
 Note that as of July 2021, workflow scripts do not know which specific files were changed in a git commit, so it's up to you to
 either process all files new and old, or calculate the change list if necessary. Two different techniques are:
