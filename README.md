@@ -4,13 +4,13 @@ Github Actions demo repo for several programming languages and associated linter
 1. Bash (Shellcheck)
 1. Python (flake)
 1. Perl (perl -c and prove)
-1. Ruby
+1. Ruby (ruby -wc)
 
 See `.github/workflows/` for build scripts.
 
 When there's multiple workflow scripts, all are executed in parallel. The workflow script has to decide by directory or file extension what the run actions are.
 
-Note that workflow scripts do not know which specific files were changed in a git commit, so it's up to you to
+Note that as of July 2021, workflow scripts do not know which specific files were changed in a git commit, so it's up to you to
 either process all files new and old, or calculate the change list if necessary. Two different techniques are:
 
 1. https://dev.to/scienta/get-changed-files-in-github-actions-1p36
