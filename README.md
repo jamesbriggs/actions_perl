@@ -36,4 +36,4 @@ The remaining concerns are:
 1. It should be easier to enumerate the file changes list in a commit, but there are workarounds (see above.)
 1. Github Actions is Github-specific, so there's lock-in for complex workflow scripts.
 1. There are costs/limits for using Github Actions, so either the duration of tests and matrix options need to be limited, or the cost budgeted.
-1. Althought Github Actions was released around Nov. 2019 and is fairly capable, it is still evolving, so is not a mature feature yet.
+1. Althought Github Actions was released Aug. 8. 2019 and is fairly capable, it is still evolving, so is not a mature feature yet. In contrast, Jenkins Pipelines has been around for almost a decade, with the current "Pipelines" naming since 2016.
