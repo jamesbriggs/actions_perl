@@ -1,9 +1,9 @@
 # gh-actions-demo
-Github Actions demo repo for several programming languages in one repo simultaneously:
+Github Actions demo repo for several programming languages and associated linters in one repo simultaneously:
 
-1. Bash
-1. Python
-1. Perl
+1. Bash (Shellcheck)
+1. Python (flake)
+1. Perl (perl -c and prove)
 1. Ruby
 
 See `.github/workflows/` for build scripts.
