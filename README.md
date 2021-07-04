@@ -9,7 +9,7 @@ Github Actions PoC demo repo for several programming languages and associated li
 1. Perl (perl -c and prove)
 1. Ruby (ruby -wc)
 
-See `.github/workflows/` for the build scripts.
+See `.github/workflows/` for the workflow build scripts.
 
 ## How Github Actions Works
 
