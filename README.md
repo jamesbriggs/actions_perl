@@ -29,9 +29,11 @@ The positive results are that:
 
 1. The functionality meets the basic requirements for linting files by language for multiple languages.
 1. The matrix-style permutation of Docker containers by OS and language version is remarkably powerful and easy to use.
+1. As a hosted build solution, it eliminates the need to manage Jenkins master and remote instances, for example.
 
 The remaining concerns are:
 
 1. It should be easier to enumerate the file changes list in a commit, but there are workarounds (see above.)
 1. Github Actions is Github-specific, so there's lock-in for complex workflow scripts.
 1. There are costs/limits for using Github Actions, so either the duration of tests and matrix options need to be limited, or the cost budgeted.
+1. Althought Github Actions was released around Nov. 2019 and is fairly capable, it is still evolving, so is not a mature feature yet.
