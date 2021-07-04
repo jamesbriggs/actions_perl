@@ -20,6 +20,6 @@ jobs:
       - run: perl -V
       - run: prove -lv t
       - run: echo "GITHUB_WORKSPACE=${GITHUB_WORKSPACE}"
-      - run: find ${GITHUB_WORKSPACE} -name '*.pl' -o -name '*.pm'
-      - run: find . -name '*.pl' -o -name '*.pm'
-      - run: find ${GITHUB_WORKSPACE} -name '*.pl' -print -exec perl -c {} \;
+      - run: find . -name '*.pl' -print0 | xargs -0 -n1 perl -c
+      - run: find . -name '*.pm' -print0 | xargs -0 -n1 perl -c
+
