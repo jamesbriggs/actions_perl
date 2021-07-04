@@ -37,3 +37,8 @@ The remaining concerns are:
 1. Github Actions is Github-specific, so there's lock-in for complex workflow scripts.
 1. There are costs/limits for using Github Actions, so either the duration of tests and matrix options need to be limited, or the cost budgeted.
 1. Althought Github Actions was released Aug. 8. 2019 and is fairly capable, it is still evolving, so is not a mature feature yet. In contrast, Jenkins Pipelines has been around for almost a decade, with the current "Pipelines" naming since 2016.
+
+## Future PoC Tasks
+
+In addition to linting, test the SDK in a Docker container, then upload to Docker Hub. (Currently done using Jenkins Pipelines with the Docker plugin.)
+
