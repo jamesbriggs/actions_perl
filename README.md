@@ -10,6 +10,8 @@ See `.github/workflows/` for build scripts.
 
 When there's multiple workflow scripts, all are executed in parallel. The workflow script has to decide by directory or file extension what the run actions are.
 
+Only push events (not pull) are specified in this repo to avoid reported security problems with cloned repos used in unauthorized bitcoin mining via pull requests.
+
 Note that as of July 2021, workflow scripts do not know which specific files were changed in a git commit, so it's up to you to
 either process all files new and old, or calculate the change list if necessary. Two different techniques are:
 
