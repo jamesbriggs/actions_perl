@@ -11,7 +11,10 @@ Github Actions PoC demo repo for several programming languages and associated li
 
 See `.github/workflows/` for the workflow build scripts.
 
-![Screenshot](ss_gh_actions_demo.png)
+<p align="center"> 
+<img src="ss_gh_actions_demo.png" alt="Screenshot" title="Screenshot"><br>
+Screenshot: GitHub Actions showing 4 parallel workflow results
+</p>
 
 ## How Github Actions Works
 
