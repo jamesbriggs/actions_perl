@@ -7,11 +7,11 @@ on:
       - '.github/workflows/python.yml'
 
 jobs:
-
   build:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
+        os: [ubuntu-latest, macos-latest]
         python-version: [2.7, 3.6, 3.7, 3.8, 3.9]
 
     steps:
