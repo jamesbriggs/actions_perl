@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: ${{ matrix.os }}-latest
+    defaults:
+      run:
+        working-directory: ./python
     strategy:
       matrix:
         os: [ubuntu, macos]
@@ -33,5 +36,5 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Test with pytest
         run: |
-          pytest python/test_asserts.py
+          pytest test_asserts.py
           
