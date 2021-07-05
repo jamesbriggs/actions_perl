@@ -5,7 +5,7 @@
 Github Actions PoC demo repo for several programming languages and associated linters in one repo simultaneously:
 
 1. Bash (Shellcheck)
-1. Python (flake)
+1. [![Python](https://github.com/jamesbriggs/gh-actions-demo/actions/workflows/python.yml/badge.svg)](https://github.com/jamesbriggs/gh-actions-demo/actions/workflows/python.yml) Python (flake)
 1. [![Perl](https://github.com/jamesbriggs/gh-actions-demo/actions/workflows/perl.yml/badge.svg)](https://github.com/jamesbriggs/gh-actions-demo/actions/workflows/perl.yml) Perl (perl -c, podchecker and prove)
 1. Ruby (ruby -wc)
 
