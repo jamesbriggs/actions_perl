@@ -27,6 +27,6 @@ jobs:
       - run: find perl -name '*.pl' -print0 | xargs -0 -n1 perl -c
       - run: find perl -name '*.pm' -print0 | xargs -0 -n1 perl -c
 # podchecker returns 0 for success, 1 for error, 2 for missing POD 
-#     - run: find perl -name '*.pm' -print0 | xargs -0 -n1 podchecker
+      - run: find perl -name '*.pm' -print0 | xargs -0 -n1 podchecker
 
 
