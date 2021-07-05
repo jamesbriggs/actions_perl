@@ -8,13 +8,13 @@ on:
       - '.github/workflows/perl.yml'
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}-latest
     defaults:
       run:
         working-directory: ./perl
     strategy:
       matrix:
-        os: ['ubuntu-latest', 'macos-latest']
+        os: [ubuntu, macos]
         perl: [ '5.10', '5.34' ]
     name: Perl ${{ matrix.perl }} on ${{ matrix.os }}
     steps:
