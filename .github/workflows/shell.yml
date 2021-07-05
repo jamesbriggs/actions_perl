@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'shell/**.sh'
+      - '.github/workflows/shell.yml'
 
 jobs:
   shellcheck:
