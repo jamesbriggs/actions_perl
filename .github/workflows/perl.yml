@@ -16,7 +16,7 @@ jobs:
       matrix:
         os: [ubuntu, macos]
         perl: [ '5.10', '5.34' ]
-    name: Perl ${{ matrix.perl }} on ${{ matrix.os }}
+    name: Perl ${{ matrix.perl }} on ${{ matrix.os }}-latest
     steps:
       - uses: actions/checkout@v2
       - name: Set up perl
