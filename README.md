@@ -26,7 +26,7 @@ When there's multiple workflow scripts, all are executed in parallel. The workfl
 
 ## Workflow Security
 
-Only push events (not pull) are specified in this repo to avoid reported security problems with cloned repos used in unauthorized bitcoin mining via pull requests.
+Only push events (not pull) are specified in this repo to avoid reported security problems with cloned repos used in [unauthorized bitcoin mining via pull requests.](https://dev.to/thibaultduponchelle/the-github-action-mining-attack-through-pull-request-2lmc)
 
 ## Limitations
 
