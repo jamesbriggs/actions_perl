@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        working-directory: ./perl
     strategy:
       matrix:
         os: ['ubuntu-latest', 'macos-latest']
@@ -22,9 +25,9 @@ jobs:
           perl-version: ${{ matrix.perl }}
 #     - run: cpanm --installdeps .
       - run: perl -V
-      - run: prove -lv perl/t
+      - run: prove -lv t
       - run: echo "GITHUB_WORKSPACE=${GITHUB_WORKSPACE}"
-      - run: find perl -name '*.pl' -print0 | xargs -0 -n1 perl -c
-      - run: find perl -name '*.pm' -print0 | xargs -0 -n1 perl -c
+      - run: find . -name '*.pl' -print0 | xargs -0 -n1 perl -c
+      - run: find . -name '*.pm' -print0 | xargs -0 -n1 perl -c
 # podchecker returns 0 for success, 1 for error, 2 for missing POD or no input file
-      - run: find perl -name '*.pm' -print0 | xargs -0 -n1 podchecker
+      - run: find . -name '*.pm' -print0 | xargs -0 -n1 podchecker
