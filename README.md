@@ -32,11 +32,11 @@ Only push events (not pull) are specified in this repo to avoid reported securit
 
 Note that as of July 2021, workflow scripts do not know which specific files were changed in a git commit, so it's up to the developer to:
 1. process all files, new and old
-1. specify directories in events
+1. specify directories in events (configured for workflows in this repo, reduces cost by pruning build matrix)
 1. calculate the change list. Two different techniques are:
 
-1. [Get changed files in github actions](https://dev.to/scienta/get-changed-files-in-github-actions-1p36)
-1. [Is it possible to run the job only when a specific file changes?](https://github.community/t/is-it-possible-to-run-the-job-only-when-a-specific-file-changes)
+a. [Get changed files in github actions](https://dev.to/scienta/get-changed-files-in-github-actions-1p36)
+a. [Is it possible to run the job only when a specific file changes?](https://github.community/t/is-it-possible-to-run-the-job-only-when-a-specific-file-changes)
 
 ## PoC Results
 
