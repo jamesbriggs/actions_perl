@@ -1,14 +1,16 @@
 use strict;
 
+package Sample;
+
 use Getopt::Long qw(GetOptions);
 use Pod::Usage qw(pod2usage);
 
-package Sample;
-
 my $man = 0;
 my $help = 0;
+
 ## Parse options and print usage if there is a syntax error,
 ## or if usage was explicitly requested.
+
 GetOptions('help|?' => \$help, man => \$man) or pod2usage(2);
 pod2usage(1) if $help;
 pod2usage(-verbose => 2) if $man;
