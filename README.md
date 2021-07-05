@@ -11,6 +11,8 @@ Github Actions PoC demo repo for several programming languages and associated li
 
 See `.github/workflows/` for the workflow build scripts.
 
+![Screenshot](ss_gh_actions_demo.png)
+
 ## How Github Actions Works
 
 Github Actions works by starting Docker containers for each OS or programming language version (aka "matrix-build") you specify using YAML scripts. If you're using Github anyway for source control, and your automation is amenable to Github Actions, then it's a very useful option compared to Jenkins, etc., and reduces administration.
