@@ -1,7 +1,9 @@
 name: Ruby
 
-on: push
-
+on:
+  push:
+    paths:
+      - 'ruby/**.rb'
 jobs:
   test:
     runs-on: ${{ matrix.os }}-latest
@@ -17,4 +19,4 @@ jobs:
           ruby-version: ${{ matrix.ruby }}
 #     - run: bundle install
 #     - run: bundle exec rake
-      - run: find . -name '*.rb' -print0 | xargs -0 -n1 ruby -wc
+      - run: find ruby -name '*.rb' -print0 | xargs -0 -n1 ruby -wc
