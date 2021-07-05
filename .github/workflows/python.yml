@@ -1,10 +1,13 @@
 name: Python
 
-on: [push]
+on:
+  push:
+    paths:
+      - 'python/**.py'
 
 jobs:
-  build:
 
+  build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
