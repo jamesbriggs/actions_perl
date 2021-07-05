@@ -9,6 +9,9 @@ jobs:
   shellcheck:
     name: Shellcheck
     runs-on: ${{ matrix.os }}-latest
+    defaults:
+      run:
+        working-directory: ./shell
     strategy:
       matrix:
         os: [ubuntu, macos]
