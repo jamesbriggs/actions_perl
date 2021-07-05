@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'ruby/**.rb'
+      - '.github/workflows/ruby.yml'
+
 jobs:
   test:
     runs-on: ${{ matrix.os }}-latest
