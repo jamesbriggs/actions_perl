@@ -46,7 +46,7 @@ The motivation for this PoC was to evaluate basic functionality for a multi-lang
 The positive results are that:
 
 1. The functionality meets the basic PoC requirements for linting files by language for multiple languages in the same repo.
-1. The matrix-style permutation of Docker containers by OS and language version is remarkably powerful and easy to use. The built-in Mac OS and Windows remotes is very handy, and for most people who manage Jenkins and don't want to manage those operating systems, an increase in capability.
+1. The matrix-style permutation of Docker containers by OS and language version is remarkably powerful and easy to use. The built-in Linux, Mac OS and Windows remotes (Docker images) are very handy, and for most people who manage Jenkins and don't want to manage those operating systems or license Windows, an increase in capability.
 1. As a hosted build solution, it eliminates the need to manage Jenkins master and remote instances, for example.
 1. The Actions UI is very responsive and clear for programmers with no training needed. Note that writing workflows in YAML has a moderate initial learning curve.
 
