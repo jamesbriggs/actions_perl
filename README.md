@@ -42,7 +42,7 @@ Also, to delete an old workflow name in the left-hand workflow menu, all related
 
 ## PoC Results
 
-The motivation for this PoC was to evaluate basic functionality for a multi-language REST API SDK repo.
+The motivation for this PoC was to evaluate basic functionality for linting and/or testing a multi-language REST API SDK repo after each commit (push.)
 
 The positive results are that:
 
@@ -60,7 +60,7 @@ The remaining concerns are:
 
 ## Future PoC Tasks
 
-In addition to linting, test the entire SDK in a Docker container, then upload to Docker Hub. (Currently done using Jenkins Pipeline with the Docker plugin.)
+In addition to linting, test the entire SDK in a Docker container, then upload to Docker Hub. (Currently done on demand using Jenkins Pipeline with the Docker plugin.)
 
 ## References
 
