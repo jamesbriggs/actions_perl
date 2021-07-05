@@ -7,11 +7,12 @@ on:
       - '.github/workflows/ruby.yml'
 
 jobs:
-  test:
+  build:
     runs-on: ${{ matrix.os }}-latest
     defaults:
       run:
         working-directory: ./ruby
+    name: Ruby ${{ matrix.ruby }} on ${{ matrix.os }}-latest
     strategy:
       fail-fast: false
       matrix:
