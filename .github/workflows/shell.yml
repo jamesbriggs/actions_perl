@@ -6,8 +6,8 @@ on:
       - '.github/workflows/shell.yml'
 
 jobs:
-  shellcheck:
-    name: Shellcheck
+  build:
+    name: shellcheck bash on ${{ matrix.os }}-latest
     runs-on: ${{ matrix.os }}-latest
     defaults:
       run:
