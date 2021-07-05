@@ -15,7 +15,7 @@ See `.github/workflows/` for the workflow build scripts.
 <img src="images/ss_gh_actions_demo.png" alt="Screenshot" title="Screenshot" width="90%">
 <br>
 <br>
-[Screenshot: GitHub Actions UI showing 4 workflow results]
+[Screenshot: GitHub Actions UI showing 4 workflow run results]
 </p>
 
 ## How Github Actions Works
