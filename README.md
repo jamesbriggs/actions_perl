@@ -61,3 +61,7 @@ The remaining concerns are:
 
 In addition to linting, test the entire SDK in a Docker container, then upload to Docker Hub. (Currently done using Jenkins Pipeline with the Docker plugin.)
 
+## References
+
+* [docs.github.com: working-dir](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_iddefaultsrun)
+
