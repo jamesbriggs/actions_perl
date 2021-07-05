@@ -5,6 +5,7 @@ on:
     paths:
       - 'perl/**.pl'
       - 'perl/**.pm'
+      - '.github/workflows/perl.yml'
 jobs:
   build:
     runs-on: ${{ matrix.os }}
