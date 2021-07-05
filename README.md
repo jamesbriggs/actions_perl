@@ -37,7 +37,7 @@ Note that as of July 2021, workflow scripts do not know which specific files wer
    * [Get changed files in github actions](https://dev.to/scienta/get-changed-files-in-github-actions-1p36)
    * [Is it possible to run the job only when a specific file changes?](https://github.community/t/is-it-possible-to-run-the-job-only-when-a-specific-file-changes)
 
-Also, to delete an old workflow in the left-hand workflow menu, all related workflow logs must be deleted first.
+Also, to delete an old workflow name in the left-hand workflow menu, all related workflow logs must be deleted one-by-one first.
 
 ## PoC Results
 
