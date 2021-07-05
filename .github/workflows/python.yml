@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'python/**.py'
+      - '.github/workflows/python.yml'
 
 jobs:
 
