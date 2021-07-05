@@ -1,7 +1,10 @@
 name: Perl
 
-on: push
-
+on:
+  push:
+    paths:
+      - '**.pl'
+      - '**.pm'
 jobs:
   build:
     runs-on: ${{ matrix.os }}
