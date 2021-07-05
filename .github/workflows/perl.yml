@@ -3,8 +3,8 @@ name: Perl
 on:
   push:
     paths:
-      - '**.pl'
-      - '**.pm'
+      - 'perl/**.pl'
+      - 'perl/**.pm'
 jobs:
   build:
     runs-on: ${{ matrix.os }}
