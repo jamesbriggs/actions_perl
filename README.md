@@ -67,4 +67,5 @@ In addition to linting, test the entire SDK in a Docker container, then upload t
 * [docs.github.com: working-dir](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_iddefaultsrun)
 * [docs.github.com: Security hardening for GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions)
 * [www.datree.io: Top 7 GitHub Actions best practices guide](https://www.datree.io/resources/github-actions-best-practices)
+* [github.com: Awesome Actions](https://github.com/sdras/awesome-actions)
 
