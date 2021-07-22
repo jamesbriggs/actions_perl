@@ -21,9 +21,11 @@ See `.github/workflows/` for the workflow build scripts.
 
 ## How Github Actions Works
 
-Github Actions works by starting Docker containers for each OS or programming language version (aka "matrix-build") you specify using YAML "workflow" scripts. If you're using Github anyway for source control, and your automation is amenable to Github Actions, then it's a very useful option compared to Jenkins, etc., and reduces administration.
+Github Actions works by starting "VMs"<sup>1</sup> or Docker containers for each OS or programming language version (aka "matrix-build") you specify using YAML "workflow" scripts. If you're using Github anyway for source control, and your automation is amenable to Github Actions, then it's a very useful option compared to Jenkins, etc., and reduces administration.
 
 When there's multiple workflows, all scripts are executed in parallel. The workflow script has to decide by directory or file extension what the run actions are. After three build errors, execution automatically stops to conserve resources.
+
+[1] It's outside the scope of this document, but Github Actions VMs for Linux and Windows are Azure instances, and for Mac OS a Github-specific container. On top of those you can run Docker containers.
 
 ## Workflow Security
 
