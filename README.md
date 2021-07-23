@@ -25,7 +25,7 @@ Github Actions works by starting ["runner"](https://docs.github.com/en/actions/u
 
 When there's multiple workflows, all scripts are executed in parallel. The workflow script has to decide by directory or file extension what the run actions are. After three build errors, execution automatically stops to conserve resources.
 
-[1] It's outside the scope of this document, but Github Actions VMs for Linux and Windows are Azure instances, and for Mac OS a Github-specific container. On top of those you can run Docker containers, possibly containing services including Jenkins, etc.
+[1] It's outside the scope of this document and subject to change, but for clarity, Github Actions VMs for Linux and Windows are Azure instances, and for Mac OS a Github-specific container. On top of those you can run Docker containers, possibly containing services including Jenkins, etc.
 
 ## Workflow Security
 
